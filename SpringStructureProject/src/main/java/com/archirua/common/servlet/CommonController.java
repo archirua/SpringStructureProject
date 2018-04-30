@@ -13,11 +13,8 @@ public class CommonController {
 	 * 페이지에서는 request 를 사용하지 않고 ModelAndView 를 이용한 편집 권장
 	 * servlet 별로 추가 작업이 필요할 경우에 한하여 작성
 	 */
-
 	@RequestMapping("/greeting")
     public String greeting(Model model) {
-		
-		
         //System.out.println("model :" + model.toString() );
         return "greeting";
     }
